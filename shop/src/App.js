@@ -34,10 +34,10 @@ function App() {
           </Container>
           </>  
         }/>
-        <Route path="/detail" element={<Detail/>}/>
+        <Route path="/detail/:id" element={<Detail shoes={shoes}/>}/>
         <Route path="/about" element={<About/>}>
           <Route path="member" element={<div>맴버임</div>} />
-          <Route path="location" element={<About/>} />
+          <Route path="location" element={<div>위치정보임</div>} />
         </Route>
         <Route path="/event" element={<EventPage/>}>
           <Route path="one" element={<div>첫 주문시 양배추즙 서비스</div>}/>
